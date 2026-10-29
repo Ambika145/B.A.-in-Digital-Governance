@@ -97,7 +97,7 @@ section {
   --hero-edge-right: 32px;
   --hero-form-bar-gap: 2rem;
   --hero-image-info-gap: 0;
-  --hero-info-bar-height: 4rem;
+  --hero-info-bar-height: 2.75rem;
 }
 
 /* Desktop hero: grid locks info bar to bottom of viewport on every screen */
@@ -918,12 +918,12 @@ section {
 
 .hero-info-bar {
   background: linear-gradient(90deg, #1a237e 0%, #4527a0 32%, #7b1fa2 62%, #00acc1 100%);
-  padding: 1rem 0;
+  padding: 0.4rem 0 !important;
   margin: 0;
   width: 100%;
   max-width: 100%;
   position: relative;
-  z-index: 5;
+  z-index: 50;
   flex-shrink: 0;
   display: block;
   visibility: visible;
@@ -956,10 +956,10 @@ section {
 .hero-info-item {
   flex: 1;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.85rem !important;
   font-weight: 800;
-  line-height: 1.35;
-  padding: 0 1rem;
+  line-height: 1.2 !important;
+  padding: 0.15rem 0.5rem !important;
   border-right: 1px solid rgba(255, 255, 255, 0.28);
 }
 
@@ -1103,7 +1103,7 @@ section {
     --hero-form-card-pad-y: 1.55rem;
     --hero-form-card-pad-x: 1.5rem;
     --hero-form-title-size: 1.3rem;
-    --hero-form-bar-gap: 2rem;
+    --hero-form-bar-gap: 0.35rem;
   }
 
   .hero-right {
