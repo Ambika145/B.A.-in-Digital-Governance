@@ -31,10 +31,10 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>B.A. in Digital Governance, Regulation &amp; Policy - O.P. Jindal Global University</title>
-    <meta name="description" content="B.A. in Digital Governance, Regulation &amp; Policy at O.P. Jindal Global University. A 4-year online undergraduate degree with 180 credits on AI, digital platforms, data, cybersecurity, and governance.">
+    <meta name="description" content="B.A. in Digital Governance, Regulation &amp; Policy at O.P. Jindal Global University. A 4-year online undergraduate degree with 170 credits on AI, digital platforms, data, cybersecurity, and governance.">
     <link rel="shortcut icon" type="image/x-icon" href="https://jguonline.edu.in/public/frontend/assets/img/favicon.ico">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css?v=fees-300k">
+    <link rel="stylesheet" href="css/style.css?v=feedback-1011">
 
     <!-- Critical: hero layout; enquiry form scrolls inside card only -->
     <style>
@@ -309,8 +309,8 @@
         }
 
         .hero-section .hero-title {
-          font-size: clamp(1.9rem, 5.1vh, 3.15rem) !important;
-          line-height: 1.28 !important;
+          font-size: clamp(2.1rem, min(5.6vh, 0.6rem + 2.5vw), 3.25rem) !important;
+          line-height: 1.22 !important;
           overflow: visible !important;
           padding-top: 0.32em !important;
           margin-top: 0 !important;
@@ -321,7 +321,7 @@
         }
 
         .hero-section .hero-subtitle {
-          font-size: clamp(1rem, 2.9vh, 1.65rem) !important;
+          font-size: clamp(1.1rem, min(3.1vh, 0.5rem + 1.15vw), 1.7rem) !important;
           margin-top: clamp(0.75rem, 2.4vh, 1.55rem) !important;
           line-height: 1.4 !important;
         }
@@ -354,7 +354,8 @@
         }
 
         .hero-section .hero-info-item {
-          font-size: clamp(1rem, 2.6vh, 1.45rem) !important;
+          font-size: clamp(1.2rem, min(3.1vh, 0.75rem + 1.1vw), 1.65rem) !important;
+          font-weight: 800 !important;
         }
 
         .hero-center {
@@ -433,6 +434,75 @@
         }
       }
 
+      /* Short laptop viewports: tighten spacing only — keep type readable at 100% */
+      @media screen and (min-width: 992px) and (max-height: 800px) {
+        .hero-section {
+          --hero-form-bar-gap: clamp(0.5rem, 1.8vh, 1.25rem) !important;
+        }
+
+        .hero-section .hero-container {
+          padding-top: clamp(0.3rem, 1vh, 0.6rem) !important;
+        }
+
+        .hero-section .hero-header {
+          padding-bottom: 0.15rem !important;
+        }
+
+        .hero-section .header-logo-jgu {
+          height: clamp(3.2rem, 8vh, 4.4rem) !important;
+          max-height: clamp(3.2rem, 8vh, 4.4rem) !important;
+        }
+
+        .hero-section .header-logo-jsbf {
+          height: clamp(3.6rem, 11vh, 5.2rem) !important;
+          max-height: clamp(3.6rem, 11vh, 5.2rem) !important;
+        }
+
+        .hero-left {
+          padding-top: 0.15rem !important;
+          padding-bottom: 0.15rem !important;
+        }
+
+        .hero-section .hero-title {
+          font-size: clamp(1.95rem, min(5.5vh, 0.55rem + 2.45vw), 3.1rem) !important;
+          line-height: 1.18 !important;
+          padding-top: 0.1em !important;
+        }
+
+        .hero-section .hero-title-rule {
+          margin-top: clamp(0.35rem, 1.15vh, 0.7rem) !important;
+        }
+
+        .hero-section .hero-subtitle {
+          font-size: clamp(1.05rem, min(2.85vh, 0.45rem + 1.05vw), 1.5rem) !important;
+          margin-top: clamp(0.5rem, 1.6vh, 1rem) !important;
+          line-height: 1.32 !important;
+        }
+
+        .hero-section .hero-description {
+          font-size: clamp(0.98rem, min(2.5vh, 0.4rem + 0.9vw), 1.3rem) !important;
+          margin-top: clamp(0.35rem, 1.15vh, 0.7rem) !important;
+          line-height: 1.4 !important;
+        }
+
+        .hero-left .btn-apply-now,
+        .hero-section .btn-apply-now {
+          margin-top: clamp(0.6rem, 1.8vh, 1.1rem) !important;
+          margin-bottom: 0.35rem !important;
+          padding: clamp(0.65rem, 1.7vh, 1rem) clamp(2.1rem, 3.4vh, 3rem) !important;
+          font-size: clamp(1rem, min(2.45vh, 0.45rem + 0.8vw), 1.3rem) !important;
+        }
+
+        .hero-info-bar {
+          padding: clamp(0.7rem, 1.9vh, 1.2rem) 0 !important;
+        }
+
+        .hero-section .hero-info-item {
+          font-size: clamp(1.15rem, min(3vh, 0.7rem + 1.05vw), 1.5rem) !important;
+          font-weight: 800 !important;
+        }
+      }
+
       /* 150% Windows scaling only (very short viewport ≈627px). 100% (~940px) and
          125% (~752px) are ABOVE this breakpoint and stay exactly as they are.
          Here we scale the hero down just enough that the whole left column
@@ -461,7 +531,7 @@
         }
 
         .hero-section .hero-title {
-          font-size: clamp(1.35rem, 4.5vh, 2rem) !important;
+          font-size: clamp(1.55rem, min(4.8vh, 0.45rem + 2vw), 2.25rem) !important;
           line-height: 1.2 !important;
           overflow: visible !important;
           padding-top: 0.12em !important;
@@ -472,7 +542,7 @@
         }
 
         .hero-section .hero-subtitle {
-          font-size: clamp(0.78rem, 2vh, 0.98rem) !important;
+          font-size: clamp(0.9rem, min(2.4vh, 0.35rem + 0.95vw), 1.15rem) !important;
           margin-top: clamp(0.4rem, 1.3vh, 0.7rem) !important;
           line-height: 1.32 !important;
         }
@@ -490,7 +560,8 @@
         }
 
         .hero-section .hero-info-item {
-          font-size: clamp(0.82rem, 2.1vh, 1.05rem) !important;
+          font-size: clamp(0.95rem, min(2.4vh, 0.5rem + 0.9vw), 1.2rem) !important;
+          font-weight: 800 !important;
         }
 
         .hero-section .hero-enquiry-card h3 {
@@ -602,7 +673,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <strong>Duration: 4 Years</strong>
         </div>
         <div class="hero-info-item">
-          <strong>180 Credits</strong>
+          <strong>170 Credits</strong>
         </div>
         <div class="hero-info-item">
           <strong>Batch Starts: March 2027</strong>
@@ -683,6 +754,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p class="programme-overview-text">
             <strong>Technology Is Evolving. Governance Must Keep Pace.</strong>
           </p>
+          <p class="programme-overview-usp">
+            In India, no university currently offers an undergraduate degree that specifically trains students to work at the intersection of digital technology, law, policy, and governance.
+          </p>
           <p class="programme-overview-text">
             Digital transformation is creating new challenges around AI regulation, data protection, cybersecurity, platform accountability, and digital public systems.
           </p>
@@ -703,8 +777,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="programme-learn-more-arrow" aria-hidden="true">&#8592;</span>
           </a>
           <figure class="programme-overview-finance">
-            <!-- TODO: Dummy image from the reference assets. Replace with the final programme image. -->
-            <img src="assets/programme-startup.png?v=1" alt="Digital governance visual" class="programme-overview-img">
+            <!-- Final creative assets still pending; temporarily reusing a less finance-looking feature image for digital governance context. -->
+            <img src="assets/feature-leadership-founders.png?v=1" alt="Professionals prepared for digital governance and policy leadership" class="programme-overview-img">
           </figure>
         </div>
       </div>
@@ -720,7 +794,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="skills-carousel-wrap">
       <div class="skills-carousel-viewport">
         <div class="skills-carousel-track" id="skillsCarouselTrack">
-          <!-- TODO: Dummy skill icons from the reference assets. The content source lists expertise areas and does not provide separate descriptions. -->
+          <!-- TODO: Dummy skill icons from the reference assets. -->
           <div class="skills-slide skills-slide--three">
             <div class="skill-card">
               <div class="skill-card-inner">
@@ -728,7 +802,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="skill-card-body">
                   <h3 class="skill-card-title">Artificial Intelligence Governance</h3>
                   <hr class="skill-card-line">
-                  <p class="skill-card-desc"></p>
+                  <p class="skill-card-desc">Learn how societies set rules, standards, and accountability for AI systems that shape public life.</p>
                 </div>
               </div>
             </div>
@@ -738,7 +812,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="skill-card-body">
                   <h3 class="skill-card-title">Data Protection &amp; Privacy</h3>
                   <hr class="skill-card-line">
-                  <p class="skill-card-desc"></p>
+                  <p class="skill-card-desc">Build fluency in privacy rights, data protection frameworks, and responsible data use across sectors.</p>
                 </div>
               </div>
             </div>
@@ -748,7 +822,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="skill-card-body">
                   <h3 class="skill-card-title">Digital Public Infrastructure</h3>
                   <hr class="skill-card-line">
-                  <p class="skill-card-desc"></p>
+                  <p class="skill-card-desc">Understand how digital identity, payments, and public platforms enable inclusive digital governance.</p>
                 </div>
               </div>
             </div>
@@ -761,7 +835,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="skill-card-body">
                   <h3 class="skill-card-title">Cybersecurity Governance</h3>
                   <hr class="skill-card-line">
-                  <p class="skill-card-desc"></p>
+                  <p class="skill-card-desc">Explore how institutions manage cyber risk, resilience, and security policy in a connected world.</p>
                 </div>
               </div>
             </div>
@@ -771,7 +845,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="skill-card-body">
                   <h3 class="skill-card-title">Platform Regulation</h3>
                   <hr class="skill-card-line">
-                  <p class="skill-card-desc"></p>
+                  <p class="skill-card-desc">Examine how digital platforms are governed for competition, content, safety, and user rights.</p>
                 </div>
               </div>
             </div>
@@ -781,7 +855,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="skill-card-body">
                   <h3 class="skill-card-title">Technology Policy</h3>
                   <hr class="skill-card-line">
-                  <p class="skill-card-desc"></p>
+                  <p class="skill-card-desc">Develop the skills to analyse, draft, and evaluate technology policy for governments and organisations.</p>
                 </div>
               </div>
             </div>
@@ -794,7 +868,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="skill-card-body">
                   <h3 class="skill-card-title">Digital Diplomacy</h3>
                   <hr class="skill-card-line">
-                  <p class="skill-card-desc"></p>
+                  <p class="skill-card-desc">Study how states and institutions negotiate digital issues across borders, alliances, and geopolitics.</p>
                 </div>
               </div>
             </div>
@@ -804,7 +878,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="skill-card-body">
                   <h3 class="skill-card-title">Global Internet Governance</h3>
                   <hr class="skill-card-line">
-                  <p class="skill-card-desc"></p>
+                  <p class="skill-card-desc">Gain insight into the global institutions, norms, and debates that shape the future of the internet.</p>
                 </div>
               </div>
             </div>
@@ -824,8 +898,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container know-more-container">
     <div class="know-more-inner">
       <div class="know-more-media">
-        <!-- TODO: Dummy brochure image from the reference assets. Replace with the final programme image. -->
-        <img src="assets/know-more-brochure.png?v=2" alt="Programme brochure visual" class="know-more-img">
+        <!-- Final creative assets still pending; temporarily reusing a less finance-looking feature image for course structure. -->
+        <img src="assets/feature-innovation-first.png?v=1" alt="Innovation-led learning for digital governance and policy" class="know-more-img">
       </div>
       <div class="know-more-content">
         <h3 class="know-more-title">Course Structure</h3>
@@ -1051,7 +1125,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <article class="why-choose-card">
           <div class="why-choose-card-icon">
-            <img src="assets/why-choose-icon-1.png?v=1" alt="" aria-hidden="true" class="why-choose-icon-img">
+            <img src="assets/why-choose-icon-2.png?v=1" alt="" aria-hidden="true" class="why-choose-icon-img">
           </div>
           <h3 class="why-choose-card-title">Practical Learning</h3>
           <p class="why-choose-card-text">Apply concepts through policy writing, digital governance case studies, data visualisation, and regulatory impact assessments.</p>
@@ -1059,7 +1133,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <article class="why-choose-card">
           <div class="why-choose-card-icon">
-            <img src="assets/why-choose-icon-2.png?v=1" alt="" aria-hidden="true" class="why-choose-icon-img">
+            <img src="assets/why-choose-icon-3.png?v=1" alt="" aria-hidden="true" class="why-choose-icon-img">
           </div>
           <h3 class="why-choose-card-title">Industry Exposure</h3>
           <p class="why-choose-card-text">Includes opportunities for internship and capstone projects, allowing learners to connect classroom learning with practical work.</p>
@@ -1067,7 +1141,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <article class="why-choose-card">
           <div class="why-choose-card-icon">
-            <img src="assets/why-choose-icon-3.png?v=1" alt="" aria-hidden="true" class="why-choose-icon-img">
+            <img src="assets/why-choose-icon-4.png?v=1" alt="" aria-hidden="true" class="why-choose-icon-img">
           </div>
           <h3 class="why-choose-card-title">Multiple Entry &amp; Exit Options</h3>
           <p class="why-choose-card-text">Flexible pathways include UG Certificate, UG Diploma, B.A., and Honours / Honours with Research options.</p>
@@ -1075,7 +1149,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <article class="why-choose-card">
           <div class="why-choose-card-icon">
-            <img src="assets/why-choose-icon-4.png?v=1" alt="" aria-hidden="true" class="why-choose-icon-img">
+            <img src="assets/why-choose-icon-1.png?v=1" alt="" aria-hidden="true" class="why-choose-icon-img">
           </div>
           <h3 class="why-choose-card-title">Cross-Disciplinary Learning</h3>
           <p class="why-choose-card-text">Draws perspectives from public policy, law, digital sciences, international affairs, journalism, and business.</p>
@@ -1083,10 +1157,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <article class="why-choose-card">
           <div class="why-choose-card-icon">
-            <img src="assets/why-choose-icon-1.png?v=1" alt="" aria-hidden="true" class="why-choose-icon-img">
+            <img src="assets/why-choose-icon-2.png?v=1" alt="" aria-hidden="true" class="why-choose-icon-img">
           </div>
-          <h3 class="why-choose-card-title">Future-Focused Career Preparation</h3>
-          <p class="why-choose-card-text">Builds an understanding of emerging areas where technology, regulation, governance, and public policy intersect.</p>
+          <h3 class="why-choose-card-title">Career-Ready Digital Leadership</h3>
+          <p class="why-choose-card-text">Build employability for roles across government, technology companies, policy organisations, and international institutions at the tech–policy frontier.</p>
         </article>
       </div>
     </div>
@@ -1127,7 +1201,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="programme-for-icon" aria-hidden="true">
           <img src="assets/programme-for-icon-4.png?v=2" alt="" class="programme-for-icon-img">
         </div>
-        <h3 class="programme-for-card-title">AI Governance, Digital Rights, Platform Regulation, and Technology Diplomacy</h3>
+        <h3 class="programme-for-card-title">Emerging Digital Policy Fields</h3>
         <p class="programme-for-card-text">Students interested in emerging fields such as AI governance, digital rights, platform regulation, and technology diplomacy.</p>
       </article>
 
@@ -1135,7 +1209,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="programme-for-icon" aria-hidden="true">
           <img src="assets/programme-for-icon-5.png?v=2" alt="" class="programme-for-icon-img">
         </div>
-        <h3 class="programme-for-card-title">Technology and Society</h3>
+        <h3 class="programme-for-card-title">Careers at the Tech–Society Intersection</h3>
         <p class="programme-for-card-text">Future professionals who want to build careers at the intersection of technology and society.</p>
       </article>
     </div>
@@ -1259,19 +1333,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h2 class="recognition-title">Recognitions and Accreditations</h2>
     <div class="recognition-grid" id="recognitionGrid">
       <div class="rec-card rec-card-small">
-        <img src="assets/recog-1-qs-top150.png" alt="Top 150 Young Universities Worldwide – QS Young University Rankings">
+        <img src="assets/recog-1-qs-top150.png" alt="Top 150 Young Universities – QS Young University Rankings">
       </div>
       <div class="rec-card rec-card-small">
-        <img src="assets/recog-2-eminence.png" alt="Institution of Eminence (IoE) – Ministry of Education, Government of India">
+        <img src="assets/recog-2-eminence.png" alt="Institution of Eminence (IoE)">
       </div>
       <div class="rec-card rec-card-main">
-        <img src="assets/recog-3-global-rankings.png" alt="#1 in Politics &amp; International Studies – QS World University Rankings by Subject 2026">
+        <img src="assets/recog-3-global-rankings.png" alt="#1 in Politics &amp; International Studies – QS by Subject 2026">
       </div>
       <div class="rec-card rec-card-small">
         <img src="assets/recog-4-qs-no1.png" alt="#1 Private University in India – QS World University Rankings 2026">
       </div>
       <div class="rec-card rec-card-small">
-        <img src="assets/recog-5-online-learning.png" alt="5-Star Global QS Rating (2025) – Presented at the House of Lords, London">
+        <img src="assets/recog-5-online-learning.png" alt="5-Star Global QS Rating (2025)">
       </div>
     </div>
     <div class="recognition-dots" id="recognitionDots" role="tablist" aria-label="Recognition slides"></div>
@@ -1385,6 +1459,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="info-section">
           <h2>Let's connect and shape your path at JGU!</h2>
           <p class="info-text">Reach out to know more about programmes, admissions, and opportunities.</p>
+          <ul class="enquire-info-list">
+            <li>Admissions help and eligibility guidance</li>
+            <li>Programme details, curriculum, and fees</li>
+            <li>Request a callback from our team</li>
+          </ul>
         </div>
       </div>
     </div>
